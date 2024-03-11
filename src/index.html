@@ -5,26 +5,108 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="stylesheet" href="https://use.typekit.net/irs0hms.css">
   </head>
   <script src="js/main.js" type="module"></script>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-3">Colonne 1</div>
-        <div class="col-9">Colonne 2</div>
-        <div class="col-10 offset-1">Colonne 3</div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="menu">
+            <div class="logo">
+              <img src="../img/logo-tatitotu.png" alt="logo tatitotu">
+              <p class="sous-titre-logo">
+                défis de conjuguaison
+              </p>
+            </div>
+            <div class="navigation">
+              <nav>
+                <a class="navigation-option category" href="#category">catégorie</a>
+                <a class="navigation-option verb" href="#verb">verbe</a>
+                <a class="navigation-option options" href="#options">options</a>
+                <a class="navigation-option time" href="#time">temps</a>
+                <a class="navigation-option game" href="#game">défi!</a>
+              </nav>
+            </div>
+          </div>
+          <div class="col-10 offset-1">
+            <p class="introduction">
+              <span>Bienvenue</span> sur la plateforme d’apprentissage des verbes ! Explorez notre plateforme dédiée 
+              à l'apprentissage des verbes, où l'amusement et l'efficacité se rencontrent pour une 
+              expérience enrichissante.
+            </p>
+            <button class="button-intro">
+              besoin d'aide?
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-12">Colonne 1</div>
-        <div class="col-3 offset-1">Colonne 2</div>
-        <div class="col-3 offset-4">Colonne 3</div>
-        <div class="col-4 offset-1">Colonne 4</div>
-        <div class="col-4 offset-2">Colonne 5</div>
-        <div class="col-8 offset-2">Colonne 6</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="category-background">
+            <div class="col-12">
+              <button>5p</button>
+              <button>6p</button>
+              <button>7h</button>
+              <button>8h</button>
+              <button>9h</button>
+              <button>10h</button>
+              <button>11h</button>
+              <button>Groupe</button>
+              <button>Difficiles</button>
+              <button>Cif (fle)</button>
+              <button>Pronominaux</button>
+            </div>
+          </div>
+          <div class="verb-background">
+            <div class="col-4 offset-1">
+              <h2>
+                Mes verbes
+              </h2>
+              <div class="card">
+                <input type="text" id="name" name="user_name" placeholder="Ajoutez un verbe"/>
+                <button>avoir</button>
+                <button>aller</button>
+                <button>faire</button>
+                <button>savoir</button>
+                <button>être</button>
+              </div>
+            </div>
+          </div>
+          <div class="options-background">
+            <div class="col-4 offset-1">
+              <h2>
+                Options
+              </h2>
+              <div class="card">
+                <select id="simple" name="simple">
+                  <option>5</option>
+                  <option>10</option>
+                  <option selected>20</option>
+                  <option>30</option>
+                  <option>40</option>
+                  <option>50</option>
+                </select>
+                <button class="button-option">normal</button>
+                <button class="button-option">+ de temps</button>
+                <button>options d'impression</button>
+              </div>
+            </div>
+          </div>
+            <div class="col-4 offset-1">Colonne 4</div>
+            <div class="col-4 offset-2">Colonne 5</div>
+            <div class="col-8 offset-2">Colonne 6</div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-12">Colonne 1</div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">Colonne 1</div>
+        </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
