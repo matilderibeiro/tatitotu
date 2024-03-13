@@ -2,3 +2,20 @@
 @import "base";
 @import "layout";
 @import "modules/example";
+
+footer {
+    text-align: left;
+    padding-top: 65px;
+    padding-bottom: 67px;
+}
+
+a,
+footer {
+    text-decoration: none;
+}
+
+.contact-container {
+    color: var(--purple);
+    text-transform: none;
+    padding-top: 64px;
+}
