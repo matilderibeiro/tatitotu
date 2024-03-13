@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="stylesheet" href="https://use.typekit.net/irs0hms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
   </head>
   <script src="js/main.js" type="module"></script>
   <body>
@@ -45,7 +48,7 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="category-background">
+          <div class="category-background" id="category">
             <div class="col-12">
               <button>5p</button>
               <button>6p</button>
@@ -62,10 +65,13 @@
           </div>
           <div class="verb-background">
             <div class="col-4 offset-1">
-              <h2>
+              <h2 id="verb">
                 Mes verbes
               </h2>
               <div class="card">
+                <p class="add-and-delet delet">
+                  Tout supprimer
+                </p>
                 <input type="text" id="name" name="user_name" placeholder="Ajoutez un verbe"/>
                 <button>avoir</button>
                 <button>aller</button>
@@ -77,7 +83,7 @@
           </div>
           <div class="options-background">
             <div class="col-4 offset-1">
-              <h2>
+              <h2 id="options">
                 Options
               </h2>
               <div class="card">
@@ -102,11 +108,19 @@
             </div>
           </div>
           <div class="time-background">
-            <h2>
+            <h2 id="time">
               Mes temps
             </h2>
             <div class="col-4 offset-1">
               <div class="card">
+                <div>
+                  <p class="add-and-delet add">
+                    Tout cocher
+                  </p>
+                  <p class="add-and-delet delet">
+                    Tout décocher
+                  </p>
+                </div>
                 <h3>
                   indicatif
                 </h3>
@@ -160,7 +174,7 @@
             </div>
           </div>
           <div class="game-background">
-            <h2>
+            <h2 id="game">
               Alors, on commence le défi?
             </h2>
               <div class="col-8 offset-2">
