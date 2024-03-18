@@ -4,12 +4,12 @@
 
 :root {
   --black: #000000;
-  --white: #FFFFFF;
-  --purple: #4F10E8;
-  --pink: #E2345A;
-  --green: #1B7A68;
-  --orange: #F7774B;
-  --yellow: #FFC552;
+  --white: #ffffff;
+  --purple: #4f10e8;
+  --pink: #e2345a;
+  --green: #1b7a68;
+  --orange: #f7774b;
+  --yellow: #ffc552;
 }
 
 /* ====================================
@@ -83,9 +83,18 @@ nav {
   padding: 24px 0 24px;
 }
 
-.verb-background,
 .verb {
   background: var(--orange);
+}
+
+.verb-background {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 119, 75, 1) 0%,
+    rgba(247, 119, 75, 1) 50%,
+    rgba(79, 16, 232, 1) 50%,
+    rgba(79, 16, 232, 1) 100%
+  );
 }
 
 .options-background,
