@@ -5,10 +5,13 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="stylesheet" href="https://use.typekit.net/irs0hms.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/irs0hms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <script src="js/main.js" type="module"></script>
   <body>
@@ -17,14 +20,14 @@
         <div class="row">
           <div class="menu">
             <div class="logo">
-              <img src="../img/logo-tatitotu.png" alt="logo tatitotu">
-              <p class="sous-titre-logo">
-                défis de conjuguaison
-              </p>
+              <img src="../img/logo-tatitotu.png" alt="logo tatitotu" />
+              <p class="sous-titre-logo">défis de conjuguaison</p>
             </div>
             <div class="navigation">
               <nav>
-                <a class="navigation-option category" href="#category">catégorie</a>
+                <a class="navigation-option category" href="#category"
+                  >catégorie</a
+                >
                 <a class="navigation-option verb" href="#verb">verbe</a>
                 <a class="navigation-option options" href="#options">options</a>
                 <a class="navigation-option time" href="#time">temps</a>
@@ -34,21 +37,20 @@
           </div>
           <div class="col-10 offset-1">
             <p class="introduction">
-              <span>Bienvenue</span> sur la plateforme d’apprentissage des verbes ! Explorez notre plateforme dédiée 
-              à l'apprentissage des verbes, où l'amusement et l'efficacité se rencontrent pour une 
+              <span>Bienvenue</span> sur la plateforme d’apprentissage des
+              verbes ! Explorez notre plateforme dédiée à l'apprentissage des
+              verbes, où l'amusement et l'efficacité se rencontrent pour une
               expérience enrichissante.
             </p>
-            <button class="button-intro">
-              besoin d'aide?
-            </button>
+            <button class="button-intro">besoin d'aide?</button>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="category-background" id="category">
+      <div class="category-background" id="category">
+        <div class="container">
+          <div class="row">
             <div class="col-12">
               <button>5p</button>
               <button>6p</button>
@@ -63,16 +65,21 @@
               <button>Pronominaux</button>
             </div>
           </div>
-          <div class="verb-background">
+        </div>
+      </div>
+      <div class="verb-background">
+        <div class="container">
+          <div class="row">
             <div class="col-4 offset-1">
-              <h2 id="verb">
-                Mes verbes
-              </h2>
+              <h2 id="verb">Mes verbes</h2>
               <div class="card">
-                <p class="add-and-delet delet">
-                  Tout supprimer
-                </p>
-                <input type="text" id="name" name="user_name" placeholder="Ajoutez un verbe"/>
+                <p class="add-and-delet delet">Tout supprimer</p>
+                <input
+                  type="text"
+                  id="add-verb"
+                  name="add-verb"
+                  placeholder="Ajoutez un verbe"
+                />
                 <button>avoir</button>
                 <button>aller</button>
                 <button>faire</button>
@@ -80,50 +87,40 @@
                 <button>être</button>
               </div>
             </div>
-          </div>
-          <div class="options-background">
-            <div class="col-4 offset-1">
-              <h2 id="options">
-                Options
-              </h2>
-              <div class="card">
-                <h3>
-                  N° questions
-                </h3>
-                <select class="button-option" id="simple" name="simple">
-                  <option>5</option>
-                  <option>10</option>
-                  <option selected>20</option>
-                  <option>30</option>
-                  <option>40</option>
-                  <option>50</option>
-                </select>
-                <h4>
-                  Type
-                </h4>
-                <button class="button-option">normal</button>
-                <button class="button-option">+ de temps</button>
-                <button>options d'impression</button>
+            <div class="col-4 offset-2">
+              <div class="options-background">
+                <h2 id="options">Options</h2>
+                <div class="card">
+                  <h3>N° questions</h3>
+                  <select class="button-option" id="simple" name="simple">
+                    <option>5</option>
+                    <option>10</option>
+                    <option selected>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                  </select>
+                  <h4>Type</h4>
+                  <button class="button-option">normal</button>
+                  <button class="button-option">+ de temps</button>
+                  <button>options d'impression</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="time-background">
-            <h2 id="time">
-              Mes temps
-            </h2>
+        </div>
+      </div>
+      <div class="time-background">
+        <div class="container">
+          <div class="row">
+            <h2 id="time">Mes temps</h2>
             <div class="col-4 offset-1">
               <div class="card">
                 <div>
-                  <p class="add-and-delet add">
-                    Tout cocher
-                  </p>
-                  <p class="add-and-delet delet">
-                    Tout décocher
-                  </p>
+                  <p class="add-and-delet add">Tout cocher</p>
+                  <p class="add-and-delet delet">Tout décocher</p>
                 </div>
-                <h3>
-                  indicatif
-                </h3>
+                <h3>indicatif</h3>
                 <button>Présent</button>
                 <button>plus-que-parfait</button>
                 <button>imparfait</button>
@@ -134,9 +131,7 @@
                 <button>passé simple</button>
               </div>
               <div class="card">
-                <h3>
-                  conditionnel
-                </h3>
+                <h3>conditionnel</h3>
                 <button>Présent</button>
                 <button>Passé 1</button>
                 <button>Passé 2</button>
@@ -144,45 +139,45 @@
             </div>
             <div class="col-4 offset-2">
               <div class="card">
-                <h3>
-                  impéractif
-                </h3>
+                <h3>impéractif</h3>
                 <button>Présent</button>
                 <button>Passé</button>
               </div>
               <div class="card">
-                <h3>
-                  subjonctif
-                </h3>
+                <h3>subjonctif</h3>
                 <button>Présent</button>
                 <button>Passé</button>
               </div>
               <div class="card">
-                <h3>
-                  participe
-                </h3>
+                <h3>participe</h3>
                 <button>Présent</button>
                 <button>Passé</button>
               </div>
               <div class="card">
-                <h3>
-                  gérondif
-                </h3>
+                <h3>gérondif</h3>
                 <button>Présent</button>
                 <button>Passé</button>
               </div>
             </div>
           </div>
-          <div class="game-background">
-            <h2 id="game">
-              Alors, on commence le défi?
-            </h2>
-              <div class="col-8 offset-2">
-                <div class="card">
+        </div>
+      </div>
+      <div class="game-background">
+        <div class="container">
+          <div class="row">
+            <h2 id="game">Alors, on commence le défi?</h2>
+            <div class="col-8 offset-2">
+              <div class="card">
                 <button>sauvegarder mon défi</button>
                 <button>Imprimer</button>
                 <button>charger mon défi</button>
-                <input class="code-game" type="text" id="name" name="user_name" placeholder="code"/>
+                <input
+                  class="code-game"
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="code"
+                />
               </div>
               <button class="button-start-game">Exercer!!!</button>
             </div>
@@ -194,11 +189,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <img src="../img/logo-tatitotu.png" alt="logo tatitotu">
+            <img src="../img/logo-tatitotu.png" alt="logo tatitotu" />
             <div class="contact-container">
-              <h4>
-                Contact
-              </h4>
+              <h4>Contact</h4>
               <a href="#">christophe.roulet@edu-vd.ch</a>
             </div>
           </div>
