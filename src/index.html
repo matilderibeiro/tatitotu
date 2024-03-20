@@ -23,17 +23,15 @@
               <img src="../img/logo-tatitotu.png" alt="logo tatitotu" />
               <p class="sous-titre-logo">défis de conjuguaison</p>
             </div>
-            <div class="navigation">
-              <nav>
-                <a class="navigation-option category" href="#category"
-                  >catégorie</a
-                >
-                <a class="navigation-option verb" href="#verb">verbe</a>
-                <a class="navigation-option options" href="#options">options</a>
-                <a class="navigation-option time" href="#time">temps</a>
-                <a class="navigation-option game" href="#game">défi!</a>
-              </nav>
-            </div>
+            <nav class="navigation">
+              <a class="navigation-option category" href="#category"
+                >catégorie</a
+              >
+              <a class="navigation-option verb" href="#verb">verbe</a>
+              <a class="navigation-option options" href="#options">options</a>
+              <a class="navigation-option time" href="#time">temps</a>
+              <a class="navigation-option game" href="#game">défi!</a>
+            </nav>
           </div>
           <div class="col-10 offset-1">
             <p class="introduction">
@@ -91,8 +89,8 @@
               <div class="options-background">
                 <h2 id="options">Options</h2>
                 <div class="card">
-                  <h3>N° questions</h3>
-                  <select class="button-option" id="simple" name="simple">
+                  <h3 class="cart-title">N° questions</h3>
+                  <select class="button-square" id="simple" name="simple">
                     <option>5</option>
                     <option>10</option>
                     <option selected>20</option>
@@ -100,9 +98,9 @@
                     <option>40</option>
                     <option>50</option>
                   </select>
-                  <h4>Type</h4>
-                  <button class="button-option">normal</button>
-                  <button class="button-option">+ de temps</button>
+                  <h3 class="cart-title">Type</h3>
+                  <button class="button-square">normal</button>
+                  <button class="button-square">+ de temps</button>
                   <button>options d'impression</button>
                 </div>
               </div>
@@ -172,7 +170,7 @@
                 <button>Imprimer</button>
                 <button>charger mon défi</button>
                 <input
-                  class="code-game"
+                  class="button-square"
                   type="text"
                   id="name"
                   name="user_name"
