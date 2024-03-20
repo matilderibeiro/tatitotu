@@ -58,44 +58,6 @@ nav {
   padding: 0;
 }
 
-.category-background,
-.category {
-  background: var(--pink);
-}
-
-.category-background {
-  padding: 24px 0 24px;
-}
-
-.verb {
-  background: var(--orange);
-}
-
-.verb-background {
-  background: linear-gradient(
-    90deg,
-    rgba(247, 119, 75, 1) 0%,
-    rgba(247, 119, 75, 1) 50%,
-    rgba(79, 16, 232, 1) 50%,
-    rgba(79, 16, 232, 1) 100%
-  );
-}
-
-.options-background,
-.options {
-  background: var(--purple);
-}
-
-.time-background,
-.time {
-  background: var(--green);
-}
-
-.game-background,
-.game {
-  background: var(--yellow);
-}
-
 span {
   color: var(--purple);
 }
