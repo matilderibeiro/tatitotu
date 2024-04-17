@@ -73,6 +73,7 @@
               <div class="card">
                 <p class="add-and-delet delet">Tout supprimer</p>
                 <input
+                  class="add-verb-write"
                   type="text"
                   id="add-verb"
                   name="add-verb"
@@ -89,18 +90,22 @@
               <div class="options-background">
                 <h2 id="options">Options</h2>
                 <div class="card">
-                  <h3 class="cart-title">N° questions</h3>
-                  <select class="button-square" id="simple" name="simple">
-                    <option>5</option>
-                    <option>10</option>
-                    <option selected>20</option>
-                    <option>30</option>
-                    <option>40</option>
-                    <option>50</option>
-                  </select>
-                  <h3 class="cart-title">Type</h3>
-                  <button class="button-square">normal</button>
-                  <button class="button-square">+ de temps</button>
+                  <div class="number-questions-content">
+                    <h3 class="cart-title">N° questions</h3>
+                    <select class="button-square" id="simple" name="simple">
+                      <option>5</option>
+                      <option>10</option>
+                      <option selected>20</option>
+                      <option>30</option>
+                      <option>40</option>
+                      <option>50</option>
+                    </select>
+                  </div>
+                  <div class="type-options-content">
+                    <h3 class="cart-title">Type</h3>
+                    <button class="button-square">normal</button>
+                    <button class="button-square">+ de temps</button>
+                  </div>
                   <button>options d'impression</button>
                 </div>
               </div>
@@ -114,47 +119,63 @@
             <h2 id="time">Mes temps</h2>
             <div class="col-4 offset-1">
               <div class="card">
-                <div>
+                <div class="add-delet">
                   <p class="add-and-delet add">Tout cocher</p>
                   <p class="add-and-delet delet">Tout décocher</p>
                 </div>
                 <h3>indicatif</h3>
-                <button>Présent</button>
-                <button>plus-que-parfait</button>
-                <button>imparfait</button>
-                <button>futur antérieur</button>
-                <button>futur</button>
-                <button>passé antérieur</button>
-                <button>passé composé</button>
-                <button>passé simple</button>
+                <div class="verb-colomn-content">
+                  <div class="col-verb1">
+                    <button>Présent</button>
+                    <button>imparfait</button>
+                    <button>futur</button>
+                    <button>passé composé</button>
+                  </div>
+                  <div class="col-verb2">
+                    <button>plus-que-parfait</button>
+                    <button>futur antérieur</button>
+                    <button>passé antérieur</button>
+                    <button>passé simple</button>
+                  </div>
+                </div>
               </div>
               <div class="card">
                 <h3>conditionnel</h3>
                 <button>Présent</button>
-                <button>Passé 1</button>
-                <button>Passé 2</button>
+                <div class="times-content">
+                  <button>Passé 1</button>
+                  <button>Passé 2</button>
+                </div>
               </div>
             </div>
             <div class="col-4 offset-2">
               <div class="card">
                 <h3>impéractif</h3>
-                <button>Présent</button>
-                <button>Passé</button>
+                <div class="times-content">
+                  <button>Présent</button>
+                  <button>Passé</button>
+                </div>
               </div>
               <div class="card">
                 <h3>subjonctif</h3>
-                <button>Présent</button>
-                <button>Passé</button>
+                <div class="times-content">
+                  <button>Présent</button>
+                  <button>Passé</button>
+                </div>
               </div>
               <div class="card">
                 <h3>participe</h3>
-                <button>Présent</button>
-                <button>Passé</button>
+                <div class="times-content">
+                  <button>Présent</button>
+                  <button>Passé</button>
+                </div>
               </div>
               <div class="card">
                 <h3>gérondif</h3>
-                <button>Présent</button>
-                <button>Passé</button>
+                <div class="times-content">
+                  <button>Présent</button>
+                  <button>Passé</button>
+                </div>
               </div>
             </div>
           </div>
@@ -164,18 +185,22 @@
         <div class="container">
           <div class="row">
             <h2 id="game">Alors, on commence le défi?</h2>
-            <div class="col-8 offset-2">
+            <div class="col-10 offset-1">
               <div class="card">
-                <button>sauvegarder mon défi</button>
-                <button>Imprimer</button>
-                <button>charger mon défi</button>
-                <input
-                  class="button-square"
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  placeholder="code"
-                />
+                <div class="line-download">
+                  <button>sauvegarder mon défi</button>
+                  <button>Imprimer</button>
+                </div>
+                <div class="charge-game">
+                  <button class="button-charge-game">charger mon défi</button>
+                  <input
+                    class="code-text"
+                    type="text"
+                    id="code"
+                    name="code"
+                    placeholder="code"
+                  />
+                </div>
               </div>
               <button class="button-start-game">Exercer!!!</button>
             </div>

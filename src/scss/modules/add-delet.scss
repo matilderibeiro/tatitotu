@@ -11,4 +11,11 @@
 
 .delet {
   color: var(--pink);
+  display: flex;
+  justify-content: end;
+}
+
+.add-delet {
+  display: flex;
+  justify-content: space-between;
 }

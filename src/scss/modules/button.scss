@@ -3,7 +3,7 @@
 }
 
 button,
-input {
+.add-verb-write {
   border-radius: 50px;
   border-top: 2px solid var(--black);
   border-right: 8px solid var(--black);
@@ -14,7 +14,6 @@ input {
   font-family: "ibm-plex-mono", sans-serif;
   padding: 5px 16px;
   font-size: 20px;
-  text-align: center;
 }
 
 .button-start-game {
@@ -30,7 +29,6 @@ input {
   text-transform: uppercase;
   font-family: "ibm-plex-mono", sans-serif;
   font-size: 20px;
-  text-align: center;
 }
 
 .button-start-game {
@@ -40,4 +38,46 @@ input {
   border-bottom: 14px solid var(--purple, #4f10e8);
   border-left: 5px solid var(--purple, #4f10e8);
   background: var(--white, #fff);
+  color: var(--purple);
+}
+
+.verb-colomn-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.number-questions-content,
+.type-options-content {
+  display: flex;
+}
+
+.code-text,
+input,
+.button-square {
+  border-radius: 0;
+  border-top: 2px solid var(--black);
+  border-right: 8px solid var(--black);
+  border-bottom: 8px solid var(--black);
+  border-left: 2px solid var(--black);
+  background: var(--white);
+  text-transform: uppercase;
+  font-family: "ibm-plex-mono", sans-serif;
+  padding: 5px 16px;
+  font-size: 20px;
+}
+
+.times-content,
+.line-download {
+  display: flex;
+  justify-content: space-around;
+}
+
+.charge-game {
+  display: flex;
+  padding-left: 73px;
+}
+
+.button-charge-game {
+  border-right: 8px solid var(--black);
+  border-radius: 50px 0 0 50px;
 }
