@@ -74,6 +74,17 @@ button,
   display: flex;
 }
 
+.code-text {
+  display: flex;
+  width: 170.442px;
+  height: 52px;
+  padding: 42px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
 .code-text,
 input,
 .button-square {
@@ -98,12 +109,16 @@ input,
 
 .charge-game {
   display: flex;
-  padding-left: 73px;
+  margin: 10px 0 10px 42px;
 }
 
 .button-charge-game {
   border-right: 8px solid var(--black);
   border-radius: 50px 0 0 50px;
+  width: 431.176px;
+  height: 51.866px;
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .option-impression {
@@ -126,4 +141,16 @@ input,
 .first-line-verb,
 .second-line-verb {
   display: flex;
+}
+
+.button-download {
+  width: 602.553px;
+  height: 51.866px;
+  flex-shrink: 0;
+}
+
+.button-print {
+  width: 264.018px;
+  height: 51px;
+  flex-shrink: 0;
 }

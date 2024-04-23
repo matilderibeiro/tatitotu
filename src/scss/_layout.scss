@@ -8,14 +8,34 @@
 
 .button-square {
   padding: 2px 10px;
+  margin: 0;
 }
 
 .card {
-  padding: 45px 16px;
+  padding: 5px 6px;
 }
 
 footer {
   text-align: left;
   padding-top: 65px;
   padding-bottom: 67px;
+}
+
+.button-time {
+  display: flex;
+  width: 266.879px;
+  height: 74.891px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.add-verb-write {
+  width: 362.991px;
+  height: 73px;
+  padding: 42px 36px;
+  gap: 10px;
+  flex-shrink: 0;
 }
