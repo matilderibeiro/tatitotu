@@ -50,17 +50,17 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <button>5p</button>
-              <button>6p</button>
-              <button>7h</button>
-              <button>8h</button>
-              <button>9h</button>
-              <button>10h</button>
-              <button>11h</button>
-              <button>Groupe</button>
-              <button>Difficiles</button>
-              <button>Cif (fle)</button>
-              <button>Pronominaux</button>
+              <button class="category-button">5p</button>
+              <button class="category-button">6p</button>
+              <button class="category-button">7h</button>
+              <button class="category-button">8h</button>
+              <button class="category-button">9h</button>
+              <button class="category-button">10h</button>
+              <button class="category-button">11h</button>
+              <button class="category-button">Groupe</button>
+              <button class="category-button">Difficiles</button>
+              <button class="category-button">Cif (fle)</button>
+              <button class="category-button">Pronominaux</button>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
           <div class="row">
             <div class="col-4 offset-1">
               <h2 id="verb">Mes verbes</h2>
-              <div class="card">
+              <div class="card-add-delet card-add-delet-verb">
                 <p class="add-and-delet delet">Tout supprimer</p>
                 <input
                   class="add-verb-write"
@@ -79,18 +79,18 @@
                   name="add-verb"
                   placeholder="Ajoutez un verbe"
                 />
-                <button>avoir</button>
-                <button>aller</button>
-                <button>faire</button>
-                <button>savoir</button>
-                <button>être</button>
+                <button class="verb-button">avoir</button>
+                <button class="verb-button">aller</button>
+                <button class="verb-button">faire</button>
+                <button class="verb-button">savoir</button>
+                <button class="verb-button">être</button>
               </div>
             </div>
             <div class="col-4 offset-2">
               <div class="options-background">
                 <h2 id="options">Options</h2>
                 <div class="card">
-                  <div class="number-questions-content">
+                  <div class="line-option number-questions-content">
                     <h3 class="cart-title">N° questions</h3>
                     <select class="button-square" id="simple" name="simple">
                       <option>5</option>
@@ -101,12 +101,14 @@
                       <option>50</option>
                     </select>
                   </div>
-                  <div class="type-options-content">
+                  <div class="line-option type-options-content">
                     <h3 class="cart-title">Type</h3>
                     <button class="button-square">normal</button>
                     <button class="button-square">+ de temps</button>
                   </div>
-                  <button>options d'impression</button>
+                  <button class="option-impression">
+                    options d'impression
+                  </button>
                 </div>
               </div>
             </div>
@@ -117,8 +119,8 @@
         <div class="container">
           <div class="row">
             <h2 id="time">Mes temps</h2>
-            <div class="col-4 offset-1">
-              <div class="card">
+            <div class="col-6">
+              <div class="card card-add-delet">
                 <div class="add-delet">
                   <p class="add-and-delet add">Tout cocher</p>
                   <p class="add-and-delet delet">Tout décocher</p>
@@ -126,55 +128,55 @@
                 <h3>indicatif</h3>
                 <div class="verb-colomn-content">
                   <div class="col-verb1">
-                    <button>Présent</button>
-                    <button>imparfait</button>
-                    <button>futur</button>
-                    <button>passé composé</button>
+                    <button class="button-time">Présent</button>
+                    <button class="button-time">imparfait</button>
+                    <button class="button-time">futur</button>
+                    <button class="button-time">passé composé</button>
                   </div>
                   <div class="col-verb2">
-                    <button>plus-que-parfait</button>
-                    <button>futur antérieur</button>
-                    <button>passé antérieur</button>
-                    <button>passé simple</button>
+                    <button class="button-time">plus-que-parfait</button>
+                    <button class="button-time">futur antérieur</button>
+                    <button class="button-time">passé antérieur</button>
+                    <button class="button-time">passé simple</button>
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card card-add-delet-verb">
                 <h3>conditionnel</h3>
-                <button>Présent</button>
+                <button class="button-time">Présent</button>
                 <div class="times-content">
-                  <button>Passé 1</button>
-                  <button>Passé 2</button>
+                  <button class="button-time">Passé 1</button>
+                  <button class="button-time">Passé 2</button>
                 </div>
               </div>
             </div>
-            <div class="col-4 offset-2">
+            <div class="col-6">
               <div class="card">
                 <h3>impéractif</h3>
                 <div class="times-content">
-                  <button>Présent</button>
-                  <button>Passé</button>
+                  <button class="button-time">Présent</button>
+                  <button class="button-time">Passé</button>
                 </div>
               </div>
               <div class="card">
                 <h3>subjonctif</h3>
                 <div class="times-content">
-                  <button>Présent</button>
-                  <button>Passé</button>
+                  <button class="button-time">Présent</button>
+                  <button class="button-time">Passé</button>
                 </div>
               </div>
               <div class="card">
                 <h3>participe</h3>
                 <div class="times-content">
-                  <button>Présent</button>
-                  <button>Passé</button>
+                  <button class="button-time">Présent</button>
+                  <button class="button-time">Passé</button>
                 </div>
               </div>
               <div class="card">
                 <h3>gérondif</h3>
                 <div class="times-content">
-                  <button>Présent</button>
-                  <button>Passé</button>
+                  <button class="button-time">Présent</button>
+                  <button class="button-time">Passé</button>
                 </div>
               </div>
             </div>
